@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project default="build">
+	
+	<target name="build">
+		<antcall id="license" />
+	</target>
+	
+	<target name="license">
+		
+		<mkdir dir=".settings" />
+		<get src="https://raw.githubusercontent.com/rhjoerg/rhj-settings/master/LICENSE" dest="LICENSE" verbose="true" />
+		
+	</target>
+	
+</project>
